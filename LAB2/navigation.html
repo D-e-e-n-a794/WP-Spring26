@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.uetpeshawar.edu.pk" target="_blank">UET Website</a></li>
+    </ul>
+</nav>
+    <section id="home">
+        <h1>Home</h1>
+        <p>Welcome to my website!</p>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <p>This is a short introduction about me.</p>
+    </section>
+    <section id="courses">
+        <h1>Courses</h1>
+        <p>Here are the courses I am studying.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: yourname@gmail.com</p>
+        <p>Phone: 0300-0000000</p>
+    </section>
+</body>
+</html>
