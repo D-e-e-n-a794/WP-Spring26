@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 02 - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lab 02 - HTML & GitHub Pages Portfolio">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e2a38;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .active {
+            border-bottom: 2px solid yellow;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e2a38;
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CS 224L - Web Technologies</h1>
+    <p>Lab 02 - HTML & GitHub Pages Portfolio</p>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="registration.html">Registration</a>
+        <a href="navigation.html">Navigation Demo</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>👋 Welcome</h2>
+        <p>
+            Hello! This website is created as part of Lab 02 assignment.
+            It demonstrates HTML structure, links, images, tables, forms,
+            and GitHub Pages deployment.
+        </p>
+    </section>
+
+    <section>
+        <h2>📂 Lab Pages</h2>
+        <ul>
+            <li><a href="profile.html">Personal Profile Page</a></li>
+            <li><a href="schedule.html">Course Schedule Table</a></li>
+            <li><a href="registration.html">Student Registration Form</a></li>
+            <li><a href="navigation.html">Navigation Menu Example</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🔗 Important Links</h2>
+        <p>
+            Visit my GitHub Profile:
+            <a href=https://github.com/D-e-e-n-a794/WP-Spring26.git target="_blank">
+                GitHub
+            </a>
+        </p>
+
+        <p>
+            Official Website:
+            <a href="https://www.uetpeshawar.edu.pk" target="_blank">
+                UET Peshawar
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>📌 About This Project</h2>
+        <p>
+            This project includes:
+        </p>
+        <ul>
+            <li>HTML5 structure</li>
+            <li>Headings and text formatting</li>
+            <li>Links and images</li>
+            <li>Tables and forms</li>
+            <li>Semantic HTML elements</li>
+            <li>GitHub Pages deployment</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 | Your Name | CS Department</p>
+</footer>
+
+</body>
+</html>
