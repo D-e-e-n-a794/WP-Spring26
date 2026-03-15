@@ -1,0 +1,30 @@
+:root {
+    --bg-dark: #000000;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-main: #f8fafc;
+    --text-muted: #cbd5e1;}
+body { background: var(--bg-dark); font-family: 'Inter', sans-serif; color: var(--text-main); margin: 0; padding: 40px; }
+.gallery-wrapper { max-width: 1200px; margin: auto; }
+.card-section { margin-bottom: 60px; }
+h2 { color: white; margin-bottom: 30px; font-weight: 700; letter-spacing: 1px; }
+.card-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;}
+.card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(255, 253, 253, 0.4); }
+.card-img { height: 160px; position: relative; }
+.card-body { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.badge { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.3); padding: 4px 12px; border-radius: 20px; font-size: 10px; font-weight: bold; }
+.card-footer { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 15px; }
+.price { font-weight: 700; color: var(--text-main); }
+.btn-buy { background-color: #ef4444; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+.btn-buy:hover { background-color: #dc2626; transform: scale(1.05); }
+.profile-header { height: 80px; background: linear-gradient(to right, #6366f1, #ec4899); }
+.avatar { width: 70px; height: 70px; background: #ddd; border-radius: 50%; margin: -35px auto 10px; border: 4px solid var(--bg-dark); }
+.profile-card { text-align: center; }

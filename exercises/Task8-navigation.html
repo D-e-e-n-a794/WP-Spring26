@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Styling</title>
+    <link rel="stylesheet" href="../styles/Task8-navigation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Navigation Menu Styling</h1>
+        <section class="nav-section">
+            <h3>HORIZONTAL NAVIGATION</h3>
+            <nav class="navbar dark-nav">
+                <div class="brand">MyBrand</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="nav-section">
+            <h3>NAVIGATION WITH DROPDOWN</h3>
+            <nav class="navbar purple-nav">
+                <div class="brand">MyBrand</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services ▾</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Pages ▾</a>
+                    </li>
+                    <li><a href="#" class="btn-get-started">Get Started</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="nav-section">
+            <h3>VERTICAL SIDEBAR & BREADCRUMBS</h3>
+            <div class="layout-wrapper">
+                <aside class="sidebar">
+                    <div class="sidebar-header">Dashboard</div>
+                    <ul class="sidebar-links">
+                        <li><a href="#" class="active">🏠 Home</a></li>
+                        <li><a href="#">📁 Projects</a></li>
+                        <li><a href="#">💬 Messages</a></li>
+                    </ul>
+                </aside>
+                <main class="content-area">
+                    <nav class="breadcrumbs">
+                        <a href="#">Home</a> › <a href="#">Courses</a> › <a href="#">Web Technologies</a> › <span>Lab 03</span>
+                    </nav>
+                    <h4>Main Content Area</h4>
+                    <p>The sidebar stays on the left while content fills the right side.</p>
+                </main>
+            </div>
+        </section>
+
+        <section class="nav-section">
+            <h3>TAB NAVIGATION</h3>
+            <div class="tabs-container">
+                <ul class="tabs">
+                    <li class="active">Overview</li>
+                    <li>Curriculum</li>
+                    <li>Reviews</li>
+                    <li>Instructor</li>
+                </ul>
+                <div class="tab-content">
+                    Tab content appears here based on active tab selection.
+                </div>
+            </div>
+        </section>
+        <section class="nav-section">
+            <h3>PILL NAVIGATION</h3>
+            <div class="pills">
+                <span class="pill active">All</span>
+                <span class="pill">Design</span>
+                <span class="pill">Development</span>
+                <span class="pill">Marketing</span>
+                <span class="pill">Business</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

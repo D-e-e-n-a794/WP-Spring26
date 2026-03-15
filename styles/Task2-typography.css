@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap');
+body { background: #0f172a; color: #e2e8f0; font-family: 'Poppins', sans-serif; padding: 40px; }
+.lab-container { display: grid; gap: 20px; max-width: 900px; margin: auto; }
+.card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);}
+h1 { color: #38bdf8; font-size: 1.5rem; margin-bottom: 20px; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-roboto { font-family: 'Roboto', sans-serif; }
+.size-px { font-size: 24px; }
+.size-rem { font-size: 1.5rem; }
+.size-em { font-size: 1.2em; }
+.size-pct { font-size: 120%; }
+.t-left { text-align: left; }
+.t-center { text-align: center; }
+.t-right { text-align: right; }
+.t-justify { text-align: justify; }
+.t-under { text-decoration: underline; }
+.t-strike { text-decoration: line-through; }
+.t-upper { text-transform: uppercase; }
+.t-cap { text-transform: capitalize; }
+.s-basic { text-shadow: 2px 2px 2px #000; }
+.s-color { text-shadow: 2px 2px 5px #38bdf8; }
+.s-multi { text-shadow: 1px 1px #fff, 2px 2px #f00; }
+.s-neon { text-shadow: 0 0 10px #f0f, 0 0 20px #f0f; color: white; font-weight: bold; }

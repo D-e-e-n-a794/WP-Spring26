@@ -1,0 +1,119 @@
+
+.box {
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-family: sans-serif;
+    border-left: 6px solid #ccc;
+    background-color: #f8fbfe;
+    color: #333;
+}
+.external-style {
+    border-left-color: #9b59b6;
+    background-color: #f4ecf7;
+    color: #7d3c98;
+}
+/* 4. Universal Selector (*) */
+* { box-sizing: border-box; transition: all 0.3s ease; }
+/* 1. Element Selector (h1, p) */
+h1 { color: #34c8db; margin-top: 20px; font-weight: 800; }
+p { color: #c61591; padding: 10px; border-left: 4px solid #3498db; background: #fdfdfd; }
+/* 2. Class Selector (.neon-box) */
+.neon-box {
+    background: #eef7ff;
+    border-left: 8px solid #b6b929;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 0 10px 10px 0;}
+/* 3. ID Selector (#master-id) */
+#master-id {
+    background: #30831f;
+    color: #cd1212;
+    padding: 20px;
+    border-left: 8px solid #e74c3c;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #4309ca; 
+}
+a[href$=".pdf"] {
+    color: rgb(44, 10, 169);
+    font-weight: bold;
+    text-decoration: none; 
+}
+/* 1. Descendant Selector (Any p inside .parent-box) */
+.parent-box p {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', sans-serif;}
+/* 2. Child Selector (Direct children only - Electric Blue) */
+.parent-box > p {
+    background-color: #845a8d;
+    color: white;
+    border: 2px solid #df1536;
+    margin: 10px 0;}
+/* 3. Adjacent Sibling (The one right after h3 - Sunset Orange) */
+h3 + p {
+    background-color: #50cd2a;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #c90835;}
+/* 4. General Sibling (All followers - Lime Green) */
+h3 ~ p {
+    border-bottom: 3px solid #df12d1;
+    color: #12cb0c;
+}
+/* --- Exercise 5: Bright & Vibrant Theme --- */
+.ex5 { 
+    background: #ffffff; 
+    padding: 30px; 
+    border: 3px solid #f0f0f0; 
+    border-radius: 20px; 
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.ex5 h1 { color: #0dadcd; } 
+.ex5 h3 { color: #ed2f68; } 
+/* 1. Link States */
+.ex5 .p-link:link { color: #11e70a; text-decoration: none; font-weight: bold; }
+.ex5 .p-link:visited { color: #7B2CBF; }
+.ex5 .p-link:hover { color: #FFD166; text-decoration: underline; }
+/* 2. Form States */
+.ex5 input { border: 2px solid #FFD166; padding: 10px; border-radius: 8px; outline: none; background: #FFF9E6; }
+.ex5 input:focus { border-color: #00D2FF; background: #E6F9FF; }
+.ex5 input:checked + label { color: #06D6A0; font-weight: bold; }
+.ex5 input:disabled { background: #eee; cursor: not-allowed; }
+/* 3. Structural - Corrected */
+.ex5 li { padding: 12px; list-style: none; border-radius: 10px; margin: 8px 0; color: white; font-weight: bold; }
+.ex5 li:first-child { background: #d7ed0f; color: #333; } 
+.ex5 li:nth-child(3) { background: #df1c36; } /* Use nth-child(3) for 3rd item */
+.ex5 li:last-child { background: #00D2FF; } 
+.ex5 li:nth-child(even) { background: #06D6A0; }
+/* 4. Content-based */
+.ex5 .empty-box:empty { height: 40px; border: 3px dashed #340c20; border-radius: 10px; background: #FFF0F5; }
+.ex5 .box { padding: 12px; margin: 8px 0; border-radius: 10px; background: #E6F9FF; color: #333; }
+.ex5 .box:not(.special) { border: 2px solid #ccc; opacity: 0.6; }
+/* --- Exercise 6: High-Contrast Candy-Pop --- */
+.ex6 { 
+    background: #ffffff; padding: 30px; margin-top: 20px;
+    border: 3px solid #f0f0f0; border-radius: 20px; 
+    font-family: 'Segoe UI', sans-serif;
+    color: #333333; /* Dark Grey for high readability */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+/* 1. ::before and ::after */
+.ex6 .sparkle::before { content: "✨ "; color: #D4AF37; } /* Gold sparkle */
+.ex6 .sparkle::after { content: " ✨"; color: #D4AF37; }
+/* 2. ::first-letter and ::first-line */
+.ex6 .drama-text::first-letter { font-size: 3em; color: #FF007F; font-weight: bold; float: left; margin-right: 10px; }
+.ex6 .drama-text::first-line { color: #0077B6; font-weight: bold; text-transform: uppercase; }
+/* 3. ::selection */
+.ex6 ::selection { background: #06D6A0; color: #ffffff; }
+/* 4. Combined pseudo-elements and pseudo-classes */
+.ex6 .hover-glow { cursor: pointer; transition: 0.3s; }
+.ex6 .hover-glow:hover { color: #FF007F; }
+.ex6 .hover-glow:hover::after { content: " 🚀"; color: #FF007F; font-weight: bold; }

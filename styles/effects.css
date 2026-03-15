@@ -1,0 +1,38 @@
+.aesthetic-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #2a2829; 
+    border-radius: 15px;
+    margin: 5px;
+    background-color: #ddd; 
+}
+.filter-vibrant { filter: saturate(2) brightness(1.2); }
+.filter-dreamy { filter: blur(5px); }
+.filter-gray { filter: grayscale(100%); }
+
+/* --- Exercise 13: Advanced Image Effects --- */
+/* 1. Hover Effects: Zoom + Glow */
+.img-hover {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.img-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.4);
+}
+/* 2. CSS Filters (Blur, Brightness, Contrast) */
+.filter-blur { filter: blur(4px); }
+.filter-bright { filter: brightness(1.5); }
+.filter-contrast { filter: contrast(200%); }
+/* 3. Blend Modes (Multiply creates a cool color-tinted look) */
+.blend-multiply {
+    background-color: #FF007F; /* Pink tint */
+    background-blend-mode: multiply;
+}
+/* 4. Image Masks and Clipping Paths */
+.clip-circle {
+    clip-path: circle(50% at 50% 50%);
+}
+.clip-polygon {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

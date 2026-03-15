@@ -1,0 +1,179 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0b14; /* Deep dark blue/black */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(10, 11, 20, 0.95);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7d7dfa;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a1b3a 0%, #0a0b14 70%);
+}
+
+.course-code {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: #7d7dfa;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #7d7dfa, #a27dfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #a0a0a0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 35px;
+    background: linear-gradient(90deg, #5d5dfe, #8e5dfe);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Lab Section */
+.lab-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 40px;
+    height: 3px;
+    background: #5d5dfe;
+    margin: 0 auto 50px;
+}
+
+/* Card Grid */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #0f101d;
+    border: 1px solid #1f2035;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: left;
+    position: relative;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* The subtle glow effect for the center card */
+.card.featured {
+    border: 1px solid #3d3d6e;
+    box-shadow: 0 0 20px rgba(93, 93, 254, 0.1);
+}
+
+.card-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(93, 93, 254, 0.1);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card-content h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    color: #808090;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.card-link {
+    color: #7d7dfa;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.dual-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-hint h2 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    padding: 100px 0;
+    opacity: 0.8;
+}

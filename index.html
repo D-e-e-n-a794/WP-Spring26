@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Lab | Aesthetic Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --soft-pink: #FFD1DC;
+            --soft-blue: #AEC6CF;
+            --cream: #FFFDF5;
+            --text: #5D5D5D;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--cream);
+            background-image: radial-gradient(circle at 20% 30%, var(--soft-pink) 0px, transparent 50%),
+                              radial-gradient(circle at 80% 70%, var(--soft-blue) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text);
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header { margin-bottom: 40px; text-align: center; }
+        h1 { font-size: 2.5rem; color: #4A4A4A; }
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            list-style: none;
+            padding: 0;
+        }
+        .nav-grid li a {
+            display: block;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .nav-grid li a:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.9);
+            border-color: var(--soft-pink);
+            color: #FF6F91;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Lab Dashboard</h1>
+        
+    </header>
+    <nav>
+        <ul class="nav-grid">
+            <li><a href="exercises/selector.html">Selectors</a></li>
+            <li><a href="exercises/typography.html">Typography</a></li>
+            <li><a href="exercises/backgrounds.html">Backgrounds</a></li>
+            <li><a href="exercises/images.html">Images</a></li>
+            <li><a href="exercises/box-model.html">Box Model</a></li>
+            <li><a href="exercises/transforms.html">Transforms</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body { background: #000000; font-family: sans-serif; padding: 20px; margin: 0; }
+.main-header { 
+    background: #6c5ce7; 
+    color: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    text-align: center;}
+.bg-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);}
+.bg-card h2 { margin-top: 0; margin-bottom: 15px; font-size: 18px; color: #555; }
+.box-row { display: flex; gap: 15px; }
+.box {
+    flex: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.2s;}
+.box:hover { transform: scale(1.02); }
+.hex { background: #e74c3c; }
+.rgb { background: #3498db; }
+.hsl { background: #27ae60; }
+.rgba { background: #636e72; }
+.grad-l-r { background: linear-gradient(to right, #ff9f43, #ee5253); }
+.grad-t-b { background: linear-gradient(to bottom, #5f27cd, #341f97); }
+.grad-diag { background: linear-gradient(45deg, #10ac84, #00d2d3); }
+.grad-rain { background: linear-gradient(to right, red, orange, yellow, green, blue); }
+.blend-mul { background: url('../images/pattern.jpg'), #2c3e50; background-blend-mode: multiply; }
+.blend-scr { background: url('../images/pattern.jpg'), #ff9ff3; background-blend-mode: screen; }
+.blend-ovr { background: url('../images/pattern.jpg'), linear-gradient(to right, #ff6b6b, #48dbfb); background-blend-mode: overlay; }
+.blend-dif { background: url('../images/pattern.jpg'), #8c7ae6; background-blend-mode: difference; }
+.pat-rep { background: url('../images/dot.png') repeat; background-color: #ffeaa7; color: #333; }
+.pat-none { background: url('../images/dot.png') no-repeat center; background-color: #fab1a0; color: #333; }
+.pat-x { background: url('../images/dot.png') repeat-x; background-color: #55efc4; color: #333; }
+.pat-y { background: url('../images/dot.png') repeat-y; background-color: #81ecec; color: #333; }

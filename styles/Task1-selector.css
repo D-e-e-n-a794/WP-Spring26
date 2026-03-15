@@ -1,0 +1,24 @@
+.task-box {
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.task-box h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    border-bottom: none; 
+    color: #12c5b3;
+}
+.neon-box { background: #eef7ff; border-left: 8px solid #b6b929; padding: 15px; margin: 10px 0; }
+#master-id { background: #30831f; color: white; padding: 15px; border-left: 8px solid #e74c3c; }
+p { color: #c61591; padding: 10px; background: #fdfdfd; border-left: 4px solid #3498db; }
+.attr-item { padding: 10px; border: 1px solid #ddd; margin: 5px 0; border-radius: 5px; }
+.direct { background: #a926c6; color: white; padding: 10px; border-radius: 5px; }
+li:first-child { background: #d7ed0f; padding: 10px; margin: 5px 0; border-radius: 5px; }
+li:nth-child(even) { background: #06D6A0; padding: 10px; margin: 5px 0; border-radius: 5px; }
+.before-text::before { content: "➤ "; color: #FF007F; font-weight: bold; }
+.after-text::after { content: " ◄"; color: #0077B6; font-weight: bold; }

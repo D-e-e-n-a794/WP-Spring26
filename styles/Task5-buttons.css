@@ -1,0 +1,20 @@
+body { background: #000000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+.btn-card { background: #707378; padding: 20px; margin-bottom: 20px; border-radius: 12px; border: 1px solid #3d4f7c; }
+.btn-card h2 { font-size: 14px; color: #ffffff; margin-bottom: 15px; }
+.btn-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.btn { 
+    padding: 12px; border: none; cursor: pointer; transition: 0.4s; 
+    font-weight: bold; color: rgb(0, 0, 0); border-radius: 6px; }
+.btn-grad1 { background: linear-gradient(to right, #ff5e62, #ff9966); }
+.btn-grad2 { background: linear-gradient(to right, #2193b0, #6dd5ed); }
+.btn-pill { border-radius: 50px; }
+.btn-circle { border-radius: 50%; width: 50px; height: 50px; }
+.btn-outline { background: transparent; border: 2px solid #3498db; }
+.btn-grow:hover { transform: scale(1.1); }
+.btn-rotate:hover { transform: rotate(5deg); }
+.btn-slide:hover { background: #6c5ce7; }
+.btn-neon:hover { box-shadow: 0 0 15px #ff00ff; }
+.btn-glow:hover { box-shadow: 0 0 15px #3498db; }
+.btn:disabled { background: #57606f; cursor: not-allowed; opacity: 0.5; }
+
+

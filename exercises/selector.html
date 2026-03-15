@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Implementation Methods</title>
+    <link rel="stylesheet" href="../styles/selector.css">
+    <style>
+        .internal-box { border-left-color: #f1c40f; background-color: #fffde7; }
+        a { text-decoration: none; }
+    </style>
+
+    <link rel="stylesheet" href="../styles/selector.css">
+    <link rel="stylesheet" href="../index/index.html">
+    
+    
+
+</head>
+<body style="padding: 40px; font-family: sans-serif;">
+
+    <h1>CSS Implementation Methods</h1>
+    <p style="color: red; font-weight: bold;">This paragraph uses INLINE CSS</p>
+    <h2 style="color: #2c3e50; font-family: sans-serif;">This heading uses INTERNAL CSS</h2>
+    <div class="box internal-box">This box is styled using INTERNAL CSS via a class selector.</div>
+    <div class="box external-style">This paragraph is styled using EXTERNAL CSS.</div>
+    <div class="box external-style" style="border-left-color: #27ae60; color: #27ae60;">
+        This uses BOTH external CSS and inline CSS — inline wins!
+    </div>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 2px dashed #ccc;">
+
+    <h1>Basic Selectors</h1>
+    <p>I am styled using a standard <strong>Element Selector (p)</strong>.</p>
+    <div class="neon-box">I am styled using a <strong>Class Selector (.neon-box)</strong>.</div>
+    <div id="master-id">I am styled using an <strong>ID Selector (#master-id)</strong>.</div>
+    <div style="margin-top: 20px; padding: 10px; border: 1px solid #ddd;">
+        The <strong>Universal Selector (*)</strong> is working behind the scenes.
+    </div>
+
+    <h1>Exercise 3: Attribute Selectors</h1>
+    <div title="tip1" style="border-left: 6px solid #2196f3; background-color: #e3f2fd; padding: 10px; margin: 5px 0;">
+        This paragraph HAS a title attribute
+    </div>
+    <div style="margin: 15px 0;">
+        <div><input type="text" placeholder="type=text input"> <span class="square"></span></div>
+        <div style="margin: 5px 0;"><input type="password" placeholder="type=password input"> <span class="square"></span></div>
+        <div><input type="email" placeholder="type=email input"> <span class="square"></span></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="https://google.com" style="color: #29b929; font-weight: bold;">Google (https link)</a>
+        <a href="http://example.com">Example (http link)</a>
+        <a href="https://github.com" style="color: #0cf141; font-weight: bold;">GitHub (https link)</a> 
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 40px; height: 40px; background: conic-gradient(red, blue, lime, teal, blue, magenta, red); border: 2px solid black;"></div>
+            <a href="document.pdf" style="color: red; font-weight: bold;">Download PDF</a>
+        </div>
+    </div>
+
+    <h1 style="color: #17e7dd; text-transform: uppercase; letter-spacing: 2px; margin-top: 50px;">Exercise 4: CSS Combinators</h1>
+    <div class="parent-box" style="padding: 25px; background: #fdfbfb; border: 2px solid #eee; border-radius: 15px;">
+        <h3 style="color: #c71d94; margin-bottom: 15px;">Targeting Relationships</h3>
+        <p>Adjacent Sibling (+): I am the immediate neighbor of the H3!</p>
+        <p>General Sibling (~): I follow the H3 anywhere on this level.</p>
+        <div style="margin: 20px 0; padding: 15px; background: #8b91cd; border-radius: 10px;">
+            <p>Descendant (Space): I am deep inside a nested box.</p>
+        </div>
+        <p>Child (>): I am a direct child of the parent box.</p>
+    </div>
+    <div class="ex5">
+    <h1>Exercise 5: Pseudo-classes</h1>
+    <h3>1. Link States</h3>
+    <a href="#" class="p-link">Visit Google (Vibrant Link)</a>
+    <h3>2. Form States</h3>
+    <input type="text" placeholder="Type here...">
+    <br><br>
+    <input type="checkbox" id="check"><label for="check"> Check me (:checked)</label>
+    <br><br>
+    <input type="text" disabled value="Disabled input">
+    <h3>3. Structural Pseudo-classes</h3>
+  <ul>
+        <li>First child (Yellow)</li>
+        <li>Second item (Even/Green)</li>
+        <li>Third item (Red)</li>
+        <li>Fourth item (Even/Green)</li>
+        <li>Last child (Blue)</li>
+    </ul>
+    <h3>4. Content-based (:empty, :not)</h3>
+    <p>Empty div below:</p>
+    <div class="empty-box"></div>
+    <div class="box special">I am special (not filtered)</div>
+    <div class="box">I am NOT special (filtered)</div>
+</div>
+<div class="ex6">
+    <h1 style="color: #12c5b3;">Exercise 6: Pseudo-elements</h1>
+    <h3>1. ::before and ::after</h3>
+    <p class="sparkle" style="color: #444;">Generated content adds flair to your elements.</p>
+    <h3>2. ::first-letter and ::first-line</h3>
+    <p class="drama-text" style="color: #444;">
+        The first letter of this paragraph is large and pink, and the first line is blue and uppercase. 
+        This is a great way to create a 'drop cap' effect without extra HTML tags.
+    </p>
+    <h3>3. ::selection</h3>
+    <p style="color: #444;">Try highlighting this text with your mouse—the highlight will be Mint Green!</p>
+
+    <h3>4. Combined: ::after + :hover</h3>
+    <p class="hover-glow" style="color: #444;">Hover over this text to see the rocket emoji appear!</p>
+</div>
+</body>
+</html>

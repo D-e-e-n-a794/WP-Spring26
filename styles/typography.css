@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+/* --- Exercise 7: Typography Styling --- */
+.ex7-container { 
+    background: #ffffff; 
+    padding: 30px; 
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.15);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+/* 1. Font Families */
+.font-sans { font-family: 'Poppins', sans-serif; }
+.font-serif { font-family: 'Playfair Display', serif; color: #7B2CBF; }
+/* 2. Units */
+.size-px { font-size: 24px; color: #FF007F; }
+.size-rem { font-size: 1.5rem; color: #00D2FF; }
+.size-em { font-size: 1.2em; color: #06D6A0; }
+.size-pct { font-size: 120%; color: #FFD166; }
+/* 3. Weights */
+.weight-normal { font-weight: 400; }
+.weight-bold { font-weight: 700; color: #7B2CBF; }
+.weight-num { font-weight: 900; color: #FF007F; }
+/* 4. Style & Variant */
+.style-italic { font-style: italic; color: #00D2FF; }
+.variant-caps { font-variant: small-caps; color: #06D6A0; font-weight: bold; }
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; padding: 40px; }
+/* 1. Color and Opacity */
+.hex-color { color: #e74c3c; }
+.rgb-color { color: rgb(52, 152, 219); }
+.hsl-color { color: hsl(120, 60%, 35%); }
+.faded { opacity: 0.5; }
+.rgba-color { color: rgba(155, 89, 182, 0.7); }
+/* 2. Alignment and Decoration */
+.t-left { text-align: left; }
+.t-center { text-align: center; }
+.t-right { text-align: right; }
+.t-justify { text-align: justify; }
+.t-under { text-decoration: underline; }
+.t-over { text-decoration: overline; color: #2ecc71; }
+.t-strike { text-decoration: line-through; color: #e67e22; }
+.t-none { text-decoration: none; color: #f39c12; }
+/* 3. Transformation */
+.t-upper { text-transform: uppercase; color: #e74c3c; }
+.t-lower { text-transform: lowercase; }
+.t-cap { text-transform: capitalize; color: #1abc9c; }
+/* 4. Text Shadow */
+.s-basic { text-shadow: 2px 2px 2px #aaa; }
+.s-color { text-shadow: 2px 2px 2px #3498db; color: #2980b9; }
+.s-multi { text-shadow: 1px 1px 0 #fff, 2px 2px 0 #e67e22; background: #2c3e50; color: #fff; padding: 10px; }
+.s-glow { text-shadow: 0 0 10px #fff, 0 0 20px #3498db; background: #1a1a1a; color: #fff; padding: 10px; }
+/* --- Exercise 9: Professional & Vibrant Spacing --- */
+/* 1. Line Height (Indigo) */
+.lh-small { line-height: 1; color: #4834d4; }
+.lh-large { line-height: 2.5; color: #4834d4; }
+/* 2. Letter and Word Spacing (Teal) */
+.ls-wide { letter-spacing: 4px; color: #079992; font-weight: bold; }
+.ws-wide { word-spacing: 15px; color: #079992; font-weight: bold; }
+/* 3. Indent and White-space (Coral) */
+.text-indent { text-indent: 50px; color: #e55039; border-left: 3px solid #e55039; padding-left: 10px; }
+.white-space-pre { white-space: pre; background: #fdf0ed; color: #333; padding: 10px; border-radius: 5px; }
+/* 4. Text Overflow (The "Professional" Highlight) */
+.overflow-box {
+    width: 220px;
+    border: 2px solid #3c6382;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #f1f2f6;
+}
+

@@ -1,0 +1,52 @@
+.demo-box {
+    width: 100%;
+    height: 80px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center; 
+    padding-left: 20px;
+    font-weight: bold;
+}
+/* 1. Background Colors */
+.bg-hex { background-color: #084d7b; color: white; }
+.bg-rgb { background-color: rgb(17, 218, 101); color: white; }
+.bg-hsl { background-color: hsl(0, 84%, 43%); color: white; }
+.bg-rgba { background-color: rgba(0,0,0,0.1); }
+/* 2. Background Images & Repeat */
+.bg-img-rep { background-image: url('../images/dot.png'); background-repeat: repeat; background-color: #e3f2fd; }
+.bg-img-none { background-image: url('../images/dot.png'); background-repeat: no-repeat; background-color: #fff3f3; }
+.bg-img-x { background-image: url('../images/dot.png'); background-repeat: repeat-x; background-color: #e8f5e9; }
+.bg-img-y { background-image: url('../images/dot.png'); background-repeat: repeat-y; background-color: #f3e5f5; }
+/* 3. Background Position & Size */
+.bg-pos-center { background-image: url('../images/star.png'); background-repeat: no-repeat; background-position: center; background-color: #fffaf0; }
+.bg-pos-tr { background-image: url('../images/star.png'); background-repeat: no-repeat; background-position: top right; background-color: #fff0f0; }
+.bg-size-cover { background-image: linear-gradient(to right, #6c5ce7, #a29bfe); background-size: cover; }
+.bg-size-contain { background-image: linear-gradient(to right, #6ab04c, #f9ca24); background-size: contain; }
+/* --- Exercise 11: Advanced Backgrounds --- */
+/* 1. Multiple Background Layers */
+.multi-bg {
+    height: 200px;
+    background-image: url('../images/star.png'), linear-gradient(to right, #ff9ff3, #feca57);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    border: 2px solid #5f27cd;
+}
+/* 2. Linear and Radial Gradients */
+.linear-grad { height: 100px; background: linear-gradient(45deg, #00d2ff, #3d7eff); }
+.radial-grad { height: 100px; background: radial-gradient(circle, #ff9ff3, #5f27cd); }
+/* 3. Background Blend Modes */
+.blend-mode {
+    height: 150px;
+    background-image: url('../images/pattern.jpg'), linear-gradient(to right, #ff6b6b, #f06595);
+    background-blend-mode: multiply; /* Creates a cool tinted effect */
+}
+/* 4. Background Clip and Origin */
+.clip-demo {
+    height: 100px;
+    padding: 20px;
+    border: 10px dashed #54a0ff;
+    background-color: #5f27cd;
+    background-clip: padding-box; /* Clip background to padding box only */
+    color: white;
+}
